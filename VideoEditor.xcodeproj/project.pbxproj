@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		062380DB2C3B598100862E68 /* VideoEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380DA2C3B598100862E68 /* VideoEditorApp.swift */; };
-		062380DD2C3B598100862E68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380DC2C3B598100862E68 /* ContentView.swift */; };
+		062380DD2C3B598100862E68 /* VideoEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380DC2C3B598100862E68 /* VideoEditorView.swift */; };
 		062380DF2C3B598300862E68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062380DE2C3B598300862E68 /* Assets.xcassets */; };
 		062380E32C3B598300862E68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062380E22C3B598300862E68 /* Preview Assets.xcassets */; };
 		062380ED2C3B598300862E68 /* VideoEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380EC2C3B598300862E68 /* VideoEditorTests.swift */; };
 		062380F72C3B598400862E68 /* VideoEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380F62C3B598400862E68 /* VideoEditorUITests.swift */; };
 		062380F92C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380F82C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift */; };
+		062381062C3B5CE300862E68 /* VideoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */; };
+		062381082C3B5F9D00862E68 /* VideoEditorDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062381072C3B5F9D00862E68 /* VideoEditorDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		062380D72C3B598100862E68 /* VideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		062380DA2C3B598100862E68 /* VideoEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorApp.swift; sourceTree = "<group>"; };
-		062380DC2C3B598100862E68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		062380DC2C3B598100862E68 /* VideoEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorView.swift; sourceTree = "<group>"; };
 		062380DE2C3B598300862E68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		062380E02C3B598300862E68 /* VideoEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VideoEditor.entitlements; sourceTree = "<group>"; };
 		062380E22C3B598300862E68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		062380F22C3B598400862E68 /* VideoEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		062380F62C3B598400862E68 /* VideoEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorUITests.swift; sourceTree = "<group>"; };
 		062380F82C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorViewModel.swift; sourceTree = "<group>"; };
+		062381072C3B5F9D00862E68 /* VideoEditorDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				062380DA2C3B598100862E68 /* VideoEditorApp.swift */,
-				062380DC2C3B598100862E68 /* ContentView.swift */,
+				062380DC2C3B598100862E68 /* VideoEditorView.swift */,
+				062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */,
+				062381072C3B5F9D00862E68 /* VideoEditorDataController.swift */,
 				062380DE2C3B598300862E68 /* Assets.xcassets */,
 				062380E02C3B598300862E68 /* VideoEditor.entitlements */,
 				062380E12C3B598300862E68 /* Preview Content */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				062380DD2C3B598100862E68 /* ContentView.swift in Sources */,
+				062380DD2C3B598100862E68 /* VideoEditorView.swift in Sources */,
+				062381062C3B5CE300862E68 /* VideoEditorViewModel.swift in Sources */,
+				062381082C3B5F9D00862E68 /* VideoEditorDataController.swift in Sources */,
 				062380DB2C3B598100862E68 /* VideoEditorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +425,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"VideoEditor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "You should allow it.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,6 +462,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"VideoEditor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "You should allow it.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

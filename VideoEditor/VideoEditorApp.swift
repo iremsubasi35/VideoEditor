@@ -11,7 +11,7 @@ import SwiftUI
 struct VideoEditorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VideoEditorView()
         }
     }
 }
