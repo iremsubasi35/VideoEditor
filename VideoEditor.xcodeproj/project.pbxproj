@@ -16,6 +16,7 @@
 		062380F92C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380F82C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift */; };
 		062381062C3B5CE300862E68 /* VideoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */; };
 		062381082C3B5F9D00862E68 /* VideoEditorDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062381072C3B5F9D00862E68 /* VideoEditorDataController.swift */; };
+		06F6D1052C405243003E3D1B /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6D1042C405243003E3D1B /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		062380F82C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorViewModel.swift; sourceTree = "<group>"; };
 		062381072C3B5F9D00862E68 /* VideoEditorDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorDataController.swift; sourceTree = "<group>"; };
+		06F6D1042C405243003E3D1B /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		06F6D1062C4055CE003E3D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +102,7 @@
 		062380D92C3B598100862E68 /* VideoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				06F6D1062C4055CE003E3D1B /* Info.plist */,
 				062380DA2C3B598100862E68 /* VideoEditorApp.swift */,
 				062380DC2C3B598100862E68 /* VideoEditorView.swift */,
 				062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */,
@@ -106,6 +110,7 @@
 				062380DE2C3B598300862E68 /* Assets.xcassets */,
 				062380E02C3B598300862E68 /* VideoEditor.entitlements */,
 				062380E12C3B598300862E68 /* Preview Content */,
+				06F6D1042C405243003E3D1B /* VideoPlayerView.swift */,
 			);
 			path = VideoEditor;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				062381062C3B5CE300862E68 /* VideoEditorViewModel.swift in Sources */,
 				062381082C3B5F9D00862E68 /* VideoEditorDataController.swift in Sources */,
 				062380DB2C3B598100862E68 /* VideoEditorApp.swift in Sources */,
+				06F6D1052C405243003E3D1B /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,7 +431,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"VideoEditor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "You should allow it.";
+				INFOPLIST_FILE = VideoEditor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You should allow it.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "You should allow it.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You should allow it.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -462,7 +471,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"VideoEditor/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSAppleMusicUsageDescription = "You should allow it.";
+				INFOPLIST_FILE = VideoEditor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "You should allow it.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "You should allow it.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You should allow it.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

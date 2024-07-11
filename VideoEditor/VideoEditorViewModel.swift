@@ -21,6 +21,7 @@ class VideoEditorViewModel: NSObject, ObservableObject, UIImagePickerControllerD
     @Published var alertItem: AlertItem?
 
        private var cancellables = Set<AnyCancellable>()
+    
     func requestMediaAccess() {
             AVCaptureDevice.requestAccess(for: .video) { granted in
                 if granted {
@@ -45,8 +46,12 @@ class VideoEditorViewModel: NSObject, ObservableObject, UIImagePickerControllerD
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
 
-        guard let mediaURL = info[.mediaURL] as? URL else { return }
-        selectedVideoURL = mediaURL
+        guard let mediaURL = info[.mediaURL] as? URL else {
+                    print("Failed to get media URL")
+                    return
+                }
+                print("Selected video URL: \(mediaURL)")
+                selectedVideoURL = mediaURL
     }
 
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {

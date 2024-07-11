@@ -27,11 +27,11 @@ struct VideoEditorView: View {
                     }
                     .padding()
 
-                    if let selectedVideoURL = viewModel.selectedVideoURL {
-                        VideoPlayer(player: AVPlayer(url: selectedVideoURL))
-                            .frame(height: 300)
-                            .padding()
-                    }
+            if let selectedVideoURL = viewModel.selectedVideoURL {
+                            VideoPlayerView(player: AVPlayer(url: selectedVideoURL))
+                                .frame(height: 300)
+                                .padding()
+                        }
                 }
                 .alert(item: $viewModel.alertItem) { alertItem in
                     Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
