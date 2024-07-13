@@ -9,13 +9,18 @@ import AVFoundation
 import SwiftUI
 
 struct VideoPlayerView: View {
-    var player: AVPlayer
+  //  var player: AVPlayer
+    var videoURL: URL
 
     var body: some View {
-        VideoPlayerUIView(player: player)
-            .onAppear {
-                player.play()
+        VStack {
+        VideoPlayerUIView(player: AVPlayer(url: videoURL))
+                        .onAppear {
+                            AVPlayer(url: videoURL).play()
+                        }
+                    .frame(height: 300)
             }
+            .navigationBarTitle("Video Player", displayMode: .inline)
     }
 }
 

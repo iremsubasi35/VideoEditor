@@ -16,6 +16,8 @@
 		062380F92C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062380F82C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift */; };
 		062381062C3B5CE300862E68 /* VideoEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */; };
 		062381082C3B5F9D00862E68 /* VideoEditorDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062381072C3B5F9D00862E68 /* VideoEditorDataController.swift */; };
+		06940A782C41BFC900EAE8B4 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06940A772C41BFC900EAE8B4 /* ImagePickerView.swift */; };
+		06940A7A2C41C23200EAE8B4 /* VideoTrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06940A792C41C23200EAE8B4 /* VideoTrimView.swift */; };
 		06F6D1052C405243003E3D1B /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F6D1042C405243003E3D1B /* VideoPlayerView.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +52,8 @@
 		062380F82C3B598400862E68 /* VideoEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		062381052C3B5CE300862E68 /* VideoEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorViewModel.swift; sourceTree = "<group>"; };
 		062381072C3B5F9D00862E68 /* VideoEditorDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEditorDataController.swift; sourceTree = "<group>"; };
+		06940A772C41BFC900EAE8B4 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		06940A792C41C23200EAE8B4 /* VideoTrimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTrimView.swift; sourceTree = "<group>"; };
 		06F6D1042C405243003E3D1B /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		06F6D1062C4055CE003E3D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +115,8 @@
 				062380E02C3B598300862E68 /* VideoEditor.entitlements */,
 				062380E12C3B598300862E68 /* Preview Content */,
 				06F6D1042C405243003E3D1B /* VideoPlayerView.swift */,
+				06940A772C41BFC900EAE8B4 /* ImagePickerView.swift */,
+				06940A792C41C23200EAE8B4 /* VideoTrimView.swift */,
 			);
 			path = VideoEditor;
 			sourceTree = "<group>";
@@ -273,7 +279,9 @@
 				062380DD2C3B598100862E68 /* VideoEditorView.swift in Sources */,
 				062381062C3B5CE300862E68 /* VideoEditorViewModel.swift in Sources */,
 				062381082C3B5F9D00862E68 /* VideoEditorDataController.swift in Sources */,
+				06940A7A2C41C23200EAE8B4 /* VideoTrimView.swift in Sources */,
 				062380DB2C3B598100862E68 /* VideoEditorApp.swift in Sources */,
+				06940A782C41BFC900EAE8B4 /* ImagePickerView.swift in Sources */,
 				06F6D1052C405243003E3D1B /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

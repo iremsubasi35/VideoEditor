@@ -10,7 +10,10 @@ import AVFoundation
 
 struct VideoEditorView: View {
     @ObservedObject var viewModel: VideoEditorViewModel
+    @State private var navigateToTrim = false
+    
     var body: some View {
+        NavigationView {
         VStack {
                     Text("Video Cutter")
                         .font(.title)
@@ -26,16 +29,32 @@ struct VideoEditorView: View {
                             .cornerRadius(10)
                     }
                     .padding()
-
-            if let selectedVideoURL = viewModel.selectedVideoURL {
-                            VideoPlayerView(player: AVPlayer(url: selectedVideoURL))
-                                .frame(height: 300)
-                                .padding()
-                        }
+            NavigationLink(
+                                destination: VideoTrimView(viewModel: viewModel),
+                                isActive: Binding<Bool>(
+                                    get: { viewModel.selectedVideoURL != nil },
+                                    set: { newValue in
+                                        if !newValue {
+                                            viewModel.selectedVideoURL = nil
+                                        }
+                                    }
+                                )
+                            ) {
+                                EmptyView()
+                            }
                 }
                 .alert(item: $viewModel.alertItem) { alertItem in
                     Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
                 }
+                .fullScreenCover(isPresented: $viewModel.isPickerPresented, content: {
+                                ImagePickerView(viewModel: viewModel)
+                            })
+                            .onChange(of: viewModel.selectedVideoURL) { newValue in
+                                if newValue != nil {
+                                    navigateToTrim = true
+                                }
+                            }
+                        }
     }
 }
 
